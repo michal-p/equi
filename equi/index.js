@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-const textInput = fs.readFileSync('dataInput.txt', 'utf8')
+const textInput = fs.readFileSync('../equi/dataInput.txt', 'utf8')
   .trim()
   .split(' ')
   .map(e => Number(e))
@@ -23,4 +23,5 @@ const solution = (array = textInput, length) => {
   return result.length === 0 ? -1 : result
 };
 
-fs.writeFileSync('dataOutput.txt', JSON.stringify(solution().toString()))
+fs.writeFileSync('../equi/dataOutput.txt', JSON.stringify(solution().toString()))
+console.log("Result has been written to dataOutput.txt")
