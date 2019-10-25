@@ -20,6 +20,14 @@ function countTotal(P, x, y) {
 	return P[y+1] - P[x]
 }
 
+/**
+ * Return max found mushrooms in "m" steps
+ * @param {Mushroom field - integers} A 
+ * 
+ * 
+ * @param {Steps - int} m 
+ * @param {Start position - int} k 
+ */
 function mushrooms(A, m, k) {
 	let n = A.length
 	let result = 0
