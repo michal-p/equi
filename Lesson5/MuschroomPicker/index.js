@@ -23,8 +23,6 @@ function countTotal(P, x, y) {
 /**
  * Return max found mushrooms in "m" steps
  * @param {Mushroom field - integers} A 
- * 
- * 
  * @param {Steps - int} m 
  * @param {Start position - int} k 
  */
