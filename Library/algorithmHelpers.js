@@ -19,3 +19,28 @@ export function sumPref(array) {
 export function countTotal(P, x, y) {
 	return P[y+1] - P[x]
 }
+
+/**
+ * Return number of uniques integers
+ * @param {Array of integers} A 
+ * @param {Number of uniques} m 
+ */
+export function counting(A, m) {
+	let n = A.length
+	let count = new Array(m).fill(0)
+	A.forEach((element, i) => {
+		count[element] += 1 
+	});
+	return count
+}
+/**
+ * Return number of uniques integers
+ * The advantage against unique is that you do not need number of unique elements at the beginning
+ * @param {Integers} A 
+ */
+export function counting2(A) {
+	return A.reduce((prev, curr) => {
+		prev[curr] = ++prev[curr] || 1
+		return prev
+	}, [0]);
+}
