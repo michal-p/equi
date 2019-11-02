@@ -1,5 +1,5 @@
 import fs from 'fs'
-
+//Cesta musi byt tak aby to fungovalo ked spustame transpilovany subor Babelom z "./lib/index.js"
 const textInput = fs.readFileSync('../equi/dataInput.txt', 'utf8')
   .trim()
   .split(' ')
